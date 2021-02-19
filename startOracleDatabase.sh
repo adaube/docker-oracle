@@ -18,6 +18,6 @@ docker run \
   -e ORACLE_SID=orcl \
   -e ORACLE_PDB=xe \
   -e ORACLE_PWD=oracle \
-  -e ORACLE_CHARACTERSET=UTF8 \
+  -e ORACLE_CHARACTERSET=WE8MSWIN1252 \
   -v $HOME/.oradata:/opt/oracle/oradata \
   oracle/database:19.3.0-ee
