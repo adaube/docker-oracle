@@ -14,8 +14,6 @@ sudo chmod -R o+w ~/.oradata
 # start container
 docker run \
   --name oracle-ee \
-  --cap-add=SYS_PTRACE \
-  --security-opt seccomp=unconfined \
   -p 1521:1521 \
   -e ORACLE_SID=orcl \
   -e ORACLE_PDB=xe \
