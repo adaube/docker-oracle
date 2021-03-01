@@ -10,4 +10,4 @@ docker run \
   -p 5500:5500 \
   --shm-size=1g \
   -v ${DIRECTORY}/sql:/docker-entrypoint-initdb.d/setup \
-  -d oracle/database:19.3.0-se2
+  oracle/database:19.3.0-se2
