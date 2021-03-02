@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# connection url: jdbc:oracle:thin:@localhost:1521/ORCLPDB1?oracle.net.disableOob=true
 DIRECTORY=`dirname $0`
 DIRECTORY=$(realpath $DIRECTORY)
 

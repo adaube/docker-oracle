@@ -1,18 +1,10 @@
 #!/bin/bash
 
-# remove previous configuration
-sudo rm -rf ~/.oradata
-
-# create directory
-mkdir ~/.oradata
-
-# set permissions, oracle in container
-sudo chown 54321:54321 ~/.oradata
-# give write permissions
-sudo chmod -R o+w ~/.oradata
+DIRECTORY=`dirname $0`
+DIRECTORY=$(realpath $DIRECTORY)
 
 # start container (ee)
-docker run \
+docker run --rm \
   --name oracle-ee \
   -p 1521:1521 \
   -p 5500:5500 \
