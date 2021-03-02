@@ -4,7 +4,7 @@
 DIRECTORY=`dirname $0`
 DIRECTORY=$(realpath $DIRECTORY)
 
-docker run \
+docker run --rm \
   --name oracle-se2 \
   -p 1521:1521 \
   -p 5500:5500 \
